@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="etUsername" type="id">username</item>
+    <item name="recyclerViewAgenda" type="id">agneda</item>
+    <item name="fabAddAgenda" type="id">addagENDA</item>
+</resources>

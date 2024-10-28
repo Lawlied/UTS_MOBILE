@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Tentukan fitur minimum yang diperlukan jika ada, seperti permissions atau fitur perangkat -->
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.UTS_TAUFIKHIDAYAT"
+        tools:targetApi="31">
+
+        <!-- Aktivitas Utama yang akan diluncurkan pertama kali -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Deklarasi aktivitas lainnya -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".AddAgendaActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".AgendaListActivity"
+            android:exported="true" />
+
+        <!-- Tambahkan aktivitas tambahan di sini jika ada, misalnya ProfileActivity atau SettingsActivity -->
+
+    </application>
+
+</manifest>
